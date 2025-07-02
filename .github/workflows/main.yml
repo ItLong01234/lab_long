@@ -1,0 +1,24 @@
+# .github/workflows/deploy-ftp.yml
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - main  # Change to your branch name if needed
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /public_html/  # Change to your FTP directory
+          local-dir: ./              # Change if your build output is in dist/ or build/
