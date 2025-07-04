@@ -3,12 +3,6 @@
     Color:blue; 
     Text-decoration:none;
 }
-a{
-    text-decoration: none;
-}
-a:hover{
-    color: red;
-}
 .menu>a:visited{
     Color:green;
 } 
@@ -54,12 +48,8 @@ a:hover{
 .row-1>ul{
     display: grid;
     grid-template-columns: 19% 19% 19% 19% 19%;
-}
-.row-1>ul li{
     list-style: none;
-    border-right: 1px solid black;
-    text-align: center;
 }
-.row-1>ul li:last-child{
-    border-right: none;
+a{
+    text-decoration: none;
 }
