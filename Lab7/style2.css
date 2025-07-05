@@ -1,12 +1,12 @@
 .col-25{
-    width:25% 
-    float:left 
+    width:25% ;
+    float:left ;
 } 
 .prod{
     border-radius:10 pixel ;
-    box-shadow:0 0 5 pixel gray ;
-    margin:5 pixel ;
-    padding:5 pixel ;
+    box: shadow 5px; gray ;
+    margin:5px ;
+    padding:5px ;
     text-align:center ;
     position:relative;
 } 
@@ -38,3 +38,11 @@
     top:0 pixel ;
     right:0 pixel ;
  } 
+ .product{
+    position: relative;
+ }
+ .iconlist{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+ }
