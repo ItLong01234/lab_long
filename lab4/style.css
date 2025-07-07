@@ -1,15 +1,22 @@
-em{
-ont-variant:small-caps;
-font-size:20px; 
-word-spacing:2px; 
-letter-spacing:1px; 
- line-height:25px;
+.container{
+    width: 60%;
+    margin: 20px auto;
+}
+.row{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    justify-content: space-between;
 }
 
-h2{
-color:white;
- text-shadow:0 0 5px red;
+.col{
+    width: 100%;
+    border: 5px black;
+    
 }
-body{
-    Text-align:center 
+.col img {
+    border: 3px solid #000; /* Black border, change color as needed */
+    width: 100%;
+}
+.col img:hover{
+    border: 3px solid yellow;
 }
