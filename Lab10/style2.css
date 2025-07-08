@@ -1,0 +1,8 @@
+select{
+    width: 10%;
+    color: blue;
+}
+button{
+    border: 1px red;
+    background-color: blue;
+}
