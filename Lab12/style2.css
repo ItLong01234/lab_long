@@ -1,0 +1,10 @@
+
+.container{
+    width: 60%;
+    margin: 20px auto;
+}
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
